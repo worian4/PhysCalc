@@ -1,2 +1,2 @@
 # PhysCalc
-A calculor for physical tasks
+A calculator for physical tasks
