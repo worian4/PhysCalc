@@ -1,2 +1,2 @@
 # PhysCalc
-A calculator for physical tasks
+An analog to apps like Photomath, but equievalent for physics
