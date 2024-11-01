@@ -114,7 +114,7 @@ class Physics_Calculator:
     def calculate(self, vars: list) -> list:
         sn = self.input_to_sn(vars)
         sn_vars, need_to_turn = sn[0], sn[1]
-        for i in range(len(vars)): vars[i][1] == sn_vars[i]
+        for i in range(len(vars)): vars[i][1] = sn_vars[i]
 
         for i in self.consts:
             vars.append(i)
