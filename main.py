@@ -15,8 +15,6 @@ inp2 = [['4200', '4200', '373', '375'], ['Q', 'c', 't1', 't2'], [['t', 'C']]]
 
 calc = Physics_Calculator(formulas, der_formulas, consts, sn_input, sn_output)
 
-#calc.test(inp2)
-
 '''
 formulas = calc.generate_derivative_formulas()  #to upgrade derivative formulas
 
