@@ -9,9 +9,7 @@ sn_input = open('res/sn_input.txt', 'r').read().split('\n')
 sn_output = open('res/sn_output.txt', 'r').read().split('\n')
 
 inp = ['P = 400Wt', 'R = 10Om']  #examples of input
-inp1 = ['Q = 4200', 'c = 4200', 't1 = 100', 't2 = 102']
-
-inp2 = [['4200', '4200', '373', '375'], ['Q', 'c', 't1', 't2'], [['t', 'C']]]
+inp1 = ['Q = 4200J', 'c = 4200J/kg', 't1 = 100C', 't2 = 102C']
 
 calc = Physics_Calculator(formulas, der_formulas, consts, sn_input, sn_output)
 
