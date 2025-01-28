@@ -7,7 +7,7 @@ If you want to locate the class only, download ```core/calc.py```, but i highly 
 
 Installation:
 1. Install all files
-2. Go to ```main.py``` and run part of the code in ```''''''``` to generate the fomulas
+2. Go to ```main.py``` and run part of the code in ```''' '''``` to generate the fomulas
 3. Wait for them to generate (this may take a few minutes)
 4. Comment the code back
 5. PhysCalc is installed!
