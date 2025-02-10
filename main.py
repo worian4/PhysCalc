@@ -22,7 +22,7 @@ sn_output = open('res/sn_output.txt', 'r').read().split('\n')
 calc = Physics_Calculator(formulas, der_formulas, consts, sn_input, sn_output)
 
 while 1:
-    command = input()
+    command = input('enter command: ')
 
     if command[:9]=="calculate": #example: calculate(Q = 4200J,c = 4200J/kg*C,t1 = 100C,t2 = 102C)
         try:
