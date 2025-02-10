@@ -7,11 +7,11 @@ def calculate(inp):
     for i in range(len(out[0])): print(out[0][i]+' = '+str(out[1][i]))
 def upgrade():
     formulas = calc.generate_derivative_formulas()  #to upgrade derivative formulas
-
+    print('\n\nwriting down formulas...\n')
     with open('res/derivative_formulas.txt', 'w') as file:
-        for i in formulas:
-            print(i)
-            file.write(' '.join(i)+'\n')
+        for i in range(len(formulas)):
+            file.write(' '.join(formulas[i])+'\n')
+    print('\n\n'+'-'*20+'UPGRADE-COMPLETE'+'-'*20+'\n\n')
 
 der_formulas = open('res/derivative_formulas.txt', 'r').read().split('\n')
 formulas = open('res/base_formulas.txt', 'r').read().split('\n')
