@@ -6,8 +6,12 @@ Algorithm: PhysCalc substitudes input values to precalculated formulas and calcu
 If you want to locate the class only, download ```core/calc.py```, but i highly reccomend installing all files, as they content basic formulas, constants and formulas to turn input units to system of notation units. Also, in ```main.py``` you can see the examples of input and how to upload ```res```.
 
 Installation:
-1. Install all files
-2. Go to ```main.py``` and run part of the code in ```''' '''``` to generate the fomulas
-3. Wait for them to generate (this may take a few minutes)
-4. Comment the code back
+1. Install all files.
+2. Go to ```main.py``` and run part of the code in ```''' '''``` to generate the fomulas.
+3. Wait for them to generate (this may take a few minutes).
+4. Comment the code back.
 5. PhysCalc is installed!
+
+Requirements:
+1. Python 3.0 or higher.
+2. Sympy Library installed.
