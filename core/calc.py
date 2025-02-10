@@ -52,18 +52,18 @@ class Physics_Calculator:
                     edited_formula[i] = ['(', k[0][2:], ')']
                     edited_formula = list(self.flatten(edited_formula))
                     track.append(k[1])
-                    print(' '.join(edited_formula))
+                    #print(' '.join(edited_formula))
                     self.der_formulas.append(list(self.flatten(edited_formula)))
                     return self.generator(list(self.flatten(edited_formula)), track)
         
     def check(self):
         formulas = [list(self.flatten(self.der_formulas[0]))]
-        for i in self.der_formulas:
+        for i in range(len(self.der_formulas)):
             flag = False
             for k in formulas:
-                if not self.eq_sim(i, k):
-                    flag = True
-            if flag: formulas.append(list(self.flatten(i)))
+                if not self.eq_sim(self.der_formulas[i], k): flag = True
+            if flag: formulas.append(list(self.flatten(self.der_formulas[i])))
+            print(str(round(i/len(self.der_formulas)*100,2))+'%')
         return formulas
     
     def eq_sim(self, eq1: list, eq2: list) -> bool:
@@ -72,10 +72,12 @@ class Physics_Calculator:
         return sorted(var_eq1) == sorted(var_eq2)
 
     def generate_derivative_formulas(self):
+        print('\n\ngenerating...')
         self.der_formulas = []
         for k in self.base_formulas:
             self.der_formulas.append(list(self.flatten(k[0])))
             self.generator(list(self.flatten(k[0])), [k[1]])
+        print('\n\nchecking... please wait, this may take up to a few minuts\n\n')
         self.der_formulas = self.check()
         return self.der_formulas
     
